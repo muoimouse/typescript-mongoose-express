@@ -1,9 +1,28 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended"
+
+  "lintOptions": {
+    "typeCheck": true
+  },
+  "extends": "tslint:all",
+  "defaultSeverity": "error",
+  "jsRules": {},
+  "rules": {
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "debug",
+        "info",
+        "log",
+        "time",
+        "timeEnd",
+        "trace"
+      ]
+    },
+    "variable-name": [true, "check-format", "ban-keywords"],
+    "trailing-comma": [
     ],
-    "jsRules": {},
-    "rules": {},
-    "rulesDirectory": []
+    "max-line-length": [false],
+    "no-use-before-declare": true
+  },
+  "rulesDirectory": []
 }
