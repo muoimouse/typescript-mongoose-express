@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "testing") {
 
 } else {
 
-  mongoose.connect("mongodb://127.0.0.1:27021/typescript_mongoose", {
+  mongoose.connect("mongodb://0.0.0.0:27017/typescript_mongoose", {
     useMongoClient: true,
   });
 
